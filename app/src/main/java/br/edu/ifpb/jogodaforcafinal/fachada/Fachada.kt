@@ -65,25 +65,25 @@ class Fachada {
 
     fun dica(): String {
         var output  = ""
-        output     += "Dica:   ${jogoDaForca.getDica().uppercase()}"
+        output     += "Dica: ${jogoDaForca.getDica().uppercase()}"
 
         return output
     }
 
     fun palavra(): String {
         var output  = ""
-        output     += "Palavra:  ${jogoDaForca.getPalavraOculta().uppercase()}"
+        output     += "Palavra: ${jogoDaForca.getPalavraOculta().uppercase()}"
 
         return output
     }
 
     fun status(): String {
         var output  = ""
-        output     += "Quantidade de letras:   ${jogoDaForca.getTamPalavra()}\n"
-        output     += "Letras já utilizadas:   [${jogoDaForca.getLetrasUsadas()}]\n"
-        output     += "Quantidade de letras distintas:   ${jogoDaForca.letraDistinta()}\n"
-        output     += "Quantidade de acertos:   ${jogoDaForca.getAcertos()}\n"
-        output     += "Quantidade de tentativas:   ${jogoDaForca.getTentativa()}\n"
+        output     += "Quantidade de letras: ${jogoDaForca.getTamPalavra()}\n"
+        output     += "Letras já utilizadas: [${jogoDaForca.getLetrasUsadas()}]\n"
+        output     += "Quantidade de letras distintas: ${jogoDaForca.letraDistinta()}\n"
+        output     += "Quantidade de acertos: ${jogoDaForca.getAcertos()}\n"
+        output     += "Quantidade de tentativas: ${jogoDaForca.getTentativa()}\n"
 
         /*
         if (this.perdeu()) {
